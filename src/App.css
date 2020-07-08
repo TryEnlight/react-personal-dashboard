@@ -11,6 +11,11 @@ section {
   display: flex;
 }
 
+@media (max-width: 600px) {
+  section {
+    display: block;
+  }
+}
 
 h3 {
   text-transform: uppercase;

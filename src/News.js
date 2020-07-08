@@ -8,9 +8,7 @@ function News() {
   const [news, setNews] = useState(null);
   useEffect(() => {
     let api = `${apiUrl}/${type}?api-key=${apiKey}`;
-    
     fetch(api).then(response => response.json()).then(data => {
-      console.log(data);
       setNews(data);
     })
   }, []);
