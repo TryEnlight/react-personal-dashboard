@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* Main Styles */
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
   display: flex;
-  flex-direction: column;
+}
+
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 24px;
+}
+
+a {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+
+
+/* ToDo Component Styles */
+
+.todo-input {
+  font-size: 24px;
+  border: none;
+  width: 100%;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo {
+  margin: 32px 0px;
+  display: flex;
   align-items: center;
+  font-size: 24px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  font-size: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 300ms ease;
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+  margin-left: auto;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.checkbox:hover, .delete:hover {
+    opacity: 0.8;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
